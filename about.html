@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аромат кави - Про нас</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-amber-900">Аромат кави</a>
+            <nav class="hidden md:flex items-center space-x-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-stone-600 hover:text-amber-900 transition">Головна</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-stone-600 hover:text-amber-900 transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-stone-600 hover:text-amber-900 transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-stone-600 hover:text-amber-900 transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-stone-600 hover:text-amber-900 transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <nav class="text-sm text-stone-500 mb-8">
+            <a href="index.html" class="hover:underline">Головна</a> > <span class="text-stone-800 font-semibold">Про нас</span>
+        </nav>
+
+        <h1 class="text-4xl font-bold text-stone-900 mb-8">Про кав'ярню «Аромат кави»</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+                <p class="text-lg text-stone-700 leading-relaxed mb-6">
+                    Кавова локація «Аромат кави» розташована на території торговельного центру «МИР» у самому серці Миргорода і є ідеальним місцем для приємного відпочинку. Тут на гостей чекає тепла атмосфера, запашна свіжозварена кава та смачні десерти. Це чудове місце як для ранкової бадьорості, так і для затишних зустрічей з друзями чи колегами протягом дня.
+                </p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31" alt="Інтер'єр кав'ярні" class="rounded-2xl shadow-xl w-full h-80 object-cover">
+            </div>
+        </div>
+
+        <section>
+            <h2 class="text-2xl font-bold text-stone-900 mb-6">Наші переваги</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100">
+                    <h3 class="text-xl font-semibold text-amber-900 mb-2">Зручне розташування</h3>
+                    <p class="text-stone-600">Розташована в центрі Миргорода на території торговельного центру «МИР».</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100">
+                    <h3 class="text-xl font-semibold text-amber-900 mb-2">Якість та асортимент</h3>
+                    <p class="text-stone-600">Широкий асортимент якісних кавових напоїв та десертів.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Аромат кави</h3>
+                <p class="text-sm text-stone-400">Затишна кавова локація в самому серці Миргорода.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Контакти</h3>
+                <p class="text-sm text-stone-400 mb-2">вулиця Гоголя, ТЦ МИР, Миргород</p>
+                <p class="text-sm text-stone-400 mb-2">Телефон: +380507006898</p>
+                <p class="text-sm text-stone-400">Email: info@aromat-kavy.ua</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Години роботи</h3>
+                <p class="text-sm text-stone-400">Пн-Нд: 08:00 - 20:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
